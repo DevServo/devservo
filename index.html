@@ -3,17 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/g3.png" type="image/x-icon">
-    <meta name="description" content="Modern - Innovative Web Solutions with Selamless UI/UX ">
+    <link rel="shortcut icon" href="img/devservo icon.png" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Modern - Innovative Web Solutions with Selamless UI/UX "
+    />
     <title>DevServo</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="mask"></div>
+    
     <header>
       <a href="" style="text-decoration: none; color: white"
         ><h1>DevServo</h1></a
       >
+ 
       <a class="btn-hero" href="http://">Get A Free Quote!</a>
     </header>
     <main>
@@ -219,14 +223,15 @@
           <h2 class="reasons-headline">About Us</h2>
           <div class="about-me">
             <p>
-              I've been dabbling in <span>HTML, CSS, and JavaScript</span> since
-              2008, but my true development journey began in 2020 during the
-              pandemic. Faced with a personal project and unable to get help
-              from a friend who was a professional developer, I decided to dive
-              into coding myself. This experience ignited my passion for web
-              development. Although I came from a chemical manufacturing family
-              business and always thought I enjoyed it, I discovered a strong
-              pull towards coding. It felt like coding gave me wings.
+              My name is Anas Ahmed and I have been dabbling in
+              <span>HTML, CSS, and JavaScript</span> since 2008, but my true
+              development journey began in 2020 during the pandemic. Faced with
+              a personal project and unable to get help from a friend who was a
+              professional developer, I decided to dive into coding myself. This
+              experience ignited my passion for web development. Although I came
+              from a chemical manufacturing family business and always thought I
+              enjoyed it, I discovered a strong pull towards coding. It felt
+              like coding gave me wings.
             </p>
             <p>
               From 2020 to 2024, I dedicated myself to learning
@@ -393,7 +398,7 @@
             <div class="footer-content">
               <p>
                 &copy; <span id="currentYear"></span> DevServo. All rights
-                reserved. Template: DynamicStack<br />
+                reserved. <br>
 
                 <a href="#">Privacy Policy</a> |
                 <a href="#">Terms of Service</a>
@@ -404,29 +409,69 @@
       </section>
     </main>
     <section class="contact">
-    <div class="contact-form">
-      
-      <h2>Contact Us</h2>
-      <form id="contactForm">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+       
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Your Name"
+          />
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required />
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Your Email"
+          />
 
-        <label for="message">How Can We Help You?</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="budget">Budget</label>
+          <input
+            type="budget"
+            id="budget"
+            name="budget"
+            required
+            placeholder="Mention Currency"
+          />
 
-        <button type="submit">Send Message</button>
-        <p class="close-btn">Close</p>
-      </form>
+          <label for="message">How can we help?</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            placeholder="Please Tell us your needs here"
+          ></textarea>
+          <p class="post-message">Your Details are secure and not shared with anyone</p>
+         
+
+          <button type="submit">Send Message</button>
+          <p class="close-btn">Close</p>
+        </form>
     </div>
-  </section>
-
- 
+    
+    
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-     <script src="form.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "3OALh9aqyGt3DgFc7",
+            });
+        })();
+    </script>
+ 
+   
+    <script src="form.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
